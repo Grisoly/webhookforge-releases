@@ -1,9 +1,9 @@
 {
-  "version": "1.0.0.88",
-  "build": "88",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.0.0.88/WebhookForge.zip",
-  "sha256": "5ae7431fd850218a04c1c7f76116595a963e7a2b6f99fabb00ee87ef53880e9c",
-  "releaseNotes": "WebhookForge v1.0.0.88",
+  "version": "1.0.0.89",
+  "build": "89",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.0.0.89/WebhookForge.zip",
+  "sha256": "46509329f8b3d2bc918f9cb750a73c021b095846b38fa60b9a42a659d935fb3a",
+  "releaseNotes": "WebhookForge v1.0.0.89",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-21T10:59:50Z"
+  "publishedAt": "2026-06-21T11:06:25Z"
 }
