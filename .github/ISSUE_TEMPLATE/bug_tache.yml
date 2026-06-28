@@ -2,6 +2,7 @@ name: 🕐 Problème Tâche planifiée
 description: Signaler un problème avec une tâche planifiée (déclenchement, exécution, notification)
 title: "[Tâche planifiée] "
 labels: ["bug", "scheduled-task"]
+assignees: [WEB-DESIGN-PROD]
 body:
   - type: markdown
     attributes:
@@ -75,4 +76,3 @@ body:
     attributes:
       label: Contexte additionnel
       placeholder: "Répertoire de travail, prompt utilisé (sans données sensibles), etc."
-
