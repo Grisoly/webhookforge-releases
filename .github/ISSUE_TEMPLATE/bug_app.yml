@@ -1,0 +1,84 @@
+name: ⚙️ Problème Application
+description: Signaler un problème général (raccourci clavier, clic-droit, drag & drop, mise à jour, réglages…)
+title: "[App] "
+labels: ["bug", "app"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de remplir ce formulaire. Plus vous donnez de détails, plus vite le problème sera résolu.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version de WebhookForge
+      placeholder: "ex : 1.0.0.131"
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: Version macOS
+      placeholder: "ex : macOS 15.4 Sequoia"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Catégorie
+      options:
+        - Raccourci clavier (⌃⌥⌘A ou autre)
+        - Clic-droit Finder (Services WebhookForge)
+        - Drag & Drop (panneau dimport)
+        - Icône menu bar / popover
+        - Fenêtre principale (affichage, navigation)
+        - Mise à jour automatique
+        - Réglages (connexion, GitHub, sessions, général)
+        - Notifications push
+        - Démarrage au login
+        - Export / Import de configuration
+        - Dashboard
+        - Autre
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description du problème
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Étapes pour reproduire
+      placeholder: |
+        1. Ouvrir WebhookForge
+        2. ...
+        3. Observer que...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportement observé
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexte additionnel
+      placeholder: "Captures décran, logs, fréquence du problème..."
+
