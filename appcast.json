@@ -1,12 +1,17 @@
 {
-  "version": "1.2.0",
-  "build": "162",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.2.0/WebhookForge.zip",
-  "sha256": "5520a421f8c5adbb517774021c9c20164ad728ce173ca56a2dd53c9488449099",
-  "releaseNotes": "### Corrections\n- Dashboard : accord singulier/pluriel français correct pour 0 (\"0 tâche planifiée\", \"0 webhook configuré\", \"0 dossier surveillé\")",
+  "version": "1.2.1",
+  "build": "164",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.2.1/WebhookForge.zip",
+  "sha256": "146e47402bc038c2cf5ce11b24100d649b6e40a2ff38082bdb0500131d7588c0",
+  "releaseNotes": "### Corrections\n- Services Finder (clic-droit) : \"Surveiller le dossier\" et \"Importer dans un dossier surveillé\" fonctionnent à nouveau sur macOS 26 — `nonisolated` + `DispatchQueue.main.async` bloquaient silencieusement les appels NSServices",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T10:19:57Z",
+  "publishedAt": "2026-06-28T17:59:59Z",
   "history": [
+    {
+      "version": "1.2.0",
+      "releaseNotes": "### Corrections\n- Dashboard : accord singulier/pluriel français correct pour 0 (\"0 tâche planifiée\", \"0 webhook configuré\", \"0 dossier surveillé\")",
+      "publishedAt": "2026-06-28T10:19:57Z"
+    },
     {
       "version": "1.1.9",
       "releaseNotes": "### Nouveautés\n- Dashboard : entête complète des cards cliquable (icône + titre + sous-titre + chevron) pour naviguer vers Webhooks, Tâches ou Surveillances",
