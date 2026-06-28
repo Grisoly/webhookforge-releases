@@ -1,12 +1,17 @@
 {
-  "version": "1.1.9",
-  "build": "160",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.9/WebhookForge.zip",
-  "sha256": "10dbe6ba07bab85915ad68448361a7d7c1e8278a3773ba20ab7cffc140073659",
-  "releaseNotes": "### Nouveautés\n- Dashboard : entête complète des cards cliquable (icône + titre + sous-titre + chevron) pour naviguer vers Webhooks, Tâches ou Surveillances",
+  "version": "1.2.0",
+  "build": "162",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.2.0/WebhookForge.zip",
+  "sha256": "5520a421f8c5adbb517774021c9c20164ad728ce173ca56a2dd53c9488449099",
+  "releaseNotes": "### Corrections\n- Dashboard : accord singulier/pluriel français correct pour 0 (\"0 tâche planifiée\", \"0 webhook configuré\", \"0 dossier surveillé\")",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T10:02:03Z",
+  "publishedAt": "2026-06-28T10:19:57Z",
   "history": [
+    {
+      "version": "1.1.9",
+      "releaseNotes": "### Nouveautés\n- Dashboard : entête complète des cards cliquable (icône + titre + sous-titre + chevron) pour naviguer vers Webhooks, Tâches ou Surveillances",
+      "publishedAt": "2026-06-28T10:02:03Z"
+    },
     {
       "version": "1.1.8",
       "releaseNotes": "### Nouveautés\n- Dashboard : icône de navigation dans le header des cards Webhooks, Tâches et Surveillances — clic pour accéder directement au listing correspondant\n- Tâches : le nom de la tâche est maintenant éditable directement dans la vue détail\n- Surveillances : le nom de la surveillance est maintenant éditable directement dans la vue détail\n\n### Corrections\n- Bouton \"Signaler un bug\" (renommé depuis \"Signaler un problème\")\n- Dashboard : \"dossiers surveillés\" au lieu de \"surveillances actives\"",
