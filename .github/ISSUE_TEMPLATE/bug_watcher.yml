@@ -2,6 +2,7 @@ name: 📁 Problème Surveillance de dossier
 description: Signaler un problème avec un watcher (détection, déclenchement, icône, service Finder)
 title: "[Watcher] "
 labels: ["bug", "folder-watcher"]
+assignees: [WEB-DESIGN-PROD]
 body:
   - type: markdown
     attributes:
@@ -76,4 +77,3 @@ body:
     id: context
     attributes:
       label: Contexte additionnel
-
