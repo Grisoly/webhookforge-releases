@@ -1,0 +1,79 @@
+name: 📁 Problème Surveillance de dossier
+description: Signaler un problème avec un watcher (détection, déclenchement, icône, service Finder)
+title: "[Watcher] "
+labels: ["bug", "folder-watcher"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de remplir ce formulaire. Plus vous donnez de détails, plus vite le problème sera résolu.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version de WebhookForge
+      placeholder: "ex : 1.0.0.131"
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: Version macOS
+      placeholder: "ex : macOS 15.4 Sequoia"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem_type
+    attributes:
+      label: Type de problème
+      options:
+        - Changement de fichier non détecté
+        - Déclenchement en boucle ou excessif
+        - Session Claude Code ne démarre pas
+        - Session Claude Code échouée
+        - Icône orange non appliquée sur le dossier
+        - Icône orange non retirée après suppression
+        - Service Finder absent ("Surveiller le dossier")
+        - Service Finder "Importer" absent
+        - Badge "dossier manquant" incorrect
+        - Notification push non reçue
+        - Autre
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: triggers
+    attributes:
+      label: Déclencheurs configurés
+      options:
+        - label: Ajout de fichier
+        - label: Modification de fichier
+        - label: Renommage
+        - label: Suppression
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description du problème
+    validations:
+      required: true
+
+  - type: input
+    id: folder_path
+    attributes:
+      label: Type de dossier surveillé
+      placeholder: "ex : ~/Desktop/Téléchargements — (ne pas inclure le chemin complet)"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs de la session (depuis WatcherDetailView → historique)
+      render: text
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexte additionnel
+
