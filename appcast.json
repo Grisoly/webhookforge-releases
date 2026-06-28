@@ -1,12 +1,17 @@
 {
-  "version": "1.1.5",
-  "build": "155",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.5/WebhookForge.zip",
-  "sha256": "450b3e89ae901f0386635cb2a6a6e53b3cdda5b26eff374c0439d51d97270372",
-  "releaseNotes": "### Corrections\n- Bouton GitHub : curseur pointer actif sur tout le bouton (icône + texte animé)\n- Footer : \"WebhookForge — v1.1.5\" centré via ZStack (indépendant des largeurs gauche/droite)\n- Releases GitHub : les descriptions incluent désormais le détail des nouveautés et corrections (extrait du CHANGELOG)",
+  "version": "1.1.6",
+  "build": "156",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.6/WebhookForge.zip",
+  "sha256": "db4d34f2aa25a80cac82b714aad3e175ffe9668df22e742f7d440ffc7871207e",
+  "releaseNotes": "### Corrections\n- Bouton GitHub : \"Signaler un problème\" + icône toujours visibles dans la zone native macOS 26 (plus d'animation instable)\n- Footer : \"WebhookForge — v1.1.6\" centré (ZStack)\n- Releases GitHub : descriptions détaillées depuis CHANGELOG",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T08:46:57Z",
+  "publishedAt": "2026-06-28T09:27:36Z",
   "history": [
+    {
+      "version": "1.1.5",
+      "releaseNotes": "### Corrections\n- Bouton GitHub : curseur pointer actif sur tout le bouton (icône + texte animé)\n- Footer : \"WebhookForge — v1.1.5\" centré via ZStack (indépendant des largeurs gauche/droite)\n- Releases GitHub : les descriptions incluent désormais le détail des nouveautés et corrections (extrait du CHANGELOG)",
+      "publishedAt": "2026-06-28T08:46:57Z"
+    },
     {
       "version": "1.1.4",
       "releaseNotes": "### Corrections\n- CI : runner mis à jour vers macOS 26 — les releases ont maintenant le bon look Tahoe (arrondis, chrome fenêtre)\n- Logo GitHub : rendu vectoriel net depuis l'asset catalog (plus de rasterisation SVG flou)",
