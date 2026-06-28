@@ -3,7 +3,8 @@
   "build": "131",
   "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.0.0.131/WebhookForge.zip",
   "sha256": "7d8ba4cc6b8db29612c05229220de80881b5e3f8e2ca7ac9de5a396a0ccd8646",
-  "releaseNotes": "WebhookForge v1.0.0.131",
+  "releaseNotes": "### Nouveautés\n- Schéma URL  — déclenchez depuis Raycast, Shortcuts macOS ou scripts shell\n- Dialog de mise à jour avec notes de release et boutons Annuler / Mettre à jour\n- Onglet Nouveautés dans les Réglages avec historique des versions\n- Surveillance de dossiers — déclenchement automatique de Claude Code à chaque changement\n- Service Finder clic droit — Surveiller le dossier et Importer dans un dossier surveillé\n- Panneau d'import flottant (⌃⌥⌘A)\n- Icône orange sur les dossiers surveillés avec badge Claude\n\n### Améliorations\n- Terminal des surveillances unifié : ligne $ verte, accordéons outils, favicon Claude\n- Sidebar : section Webhooks + Webhooks configurés\n- Dashboard : comptage tâches planifiées actives uniquement",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T06:41:33Z"
+  "publishedAt": "2026-06-28T06:41:33Z",
+  "history": []
 }
