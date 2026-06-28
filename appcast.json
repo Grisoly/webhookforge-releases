@@ -1,12 +1,17 @@
 {
-  "version": "1.1.8",
-  "build": "158",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.8/WebhookForge.zip",
-  "sha256": "42a3adab4b426201f21f10b9b131f2ac7923630a83e3025be4a9e337aa168d24",
-  "releaseNotes": "### Nouveautés\n- Dashboard : icône de navigation dans le header des cards Webhooks, Tâches et Surveillances — clic pour accéder directement au listing correspondant\n- Tâches : le nom de la tâche est maintenant éditable directement dans la vue détail\n- Surveillances : le nom de la surveillance est maintenant éditable directement dans la vue détail\n\n### Corrections\n- Bouton \"Signaler un bug\" (renommé depuis \"Signaler un problème\")\n- Dashboard : \"dossiers surveillés\" au lieu de \"surveillances actives\"",
+  "version": "1.1.9",
+  "build": "160",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.9/WebhookForge.zip",
+  "sha256": "10dbe6ba07bab85915ad68448361a7d7c1e8278a3773ba20ab7cffc140073659",
+  "releaseNotes": "### Nouveautés\n- Dashboard : entête complète des cards cliquable (icône + titre + sous-titre + chevron) pour naviguer vers Webhooks, Tâches ou Surveillances",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T09:58:09Z",
+  "publishedAt": "2026-06-28T10:02:03Z",
   "history": [
+    {
+      "version": "1.1.8",
+      "releaseNotes": "### Nouveautés\n- Dashboard : icône de navigation dans le header des cards Webhooks, Tâches et Surveillances — clic pour accéder directement au listing correspondant\n- Tâches : le nom de la tâche est maintenant éditable directement dans la vue détail\n- Surveillances : le nom de la surveillance est maintenant éditable directement dans la vue détail\n\n### Corrections\n- Bouton \"Signaler un bug\" (renommé depuis \"Signaler un problème\")\n- Dashboard : \"dossiers surveillés\" au lieu de \"surveillances actives\"",
+      "publishedAt": "2026-06-28T09:58:09Z"
+    },
     {
       "version": "1.1.7",
       "releaseNotes": "### Nouveautés\n- Réglages : onglet Général en première position\n- Réglages → Général : section \"Schéma URL\" avec exemples Raycast, Shell, macOS Shortcuts\n- Réglages → Sessions : section \"Journaux\" — voir et exporter tous les logs Claude Code en `.txt`\n- Réglages → Sessions : nombre de sessions parallèles affiché à côté des boutons +/-",
