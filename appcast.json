@@ -1,12 +1,17 @@
 {
-  "version": "1.1.1",
-  "build": "147",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.1/WebhookForge.zip",
-  "sha256": "8d15c31f72d4e62959f8d04e05253df98802b424e95f340adb5436d72980f506",
-  "releaseNotes": "### Corrections\n- Relay : reconnexion automatique dès que le secret ou l'URL est modifié dans les Réglages\n- Keychain : écriture atomique (`SecItemUpdate`) — le secret relay ne peut plus être perdu lors d'un redémarrage brutal\n- CI : workflow YAML corrigé (Python dans script séparé), `open` désactivé en environnement CI\n- Build : relancement automatique de l'app après chaque build local",
+  "version": "1.1.2",
+  "build": "149",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.2/WebhookForge.zip",
+  "sha256": "710d6a651297e30af845d4c9dcfa58d454da7d4b6d4a553702ce9a6a80d6feca",
+  "releaseNotes": "### Corrections\n- Mise à jour : l'app se ferme maintenant immédiatement après installation (plus de blocage sur la barre de progression)",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T08:09:56Z",
+  "publishedAt": "2026-06-28T08:16:19Z",
   "history": [
+    {
+      "version": "1.1.1",
+      "releaseNotes": "### Corrections\n- Relay : reconnexion automatique dès que le secret ou l'URL est modifié dans les Réglages\n- Keychain : écriture atomique (`SecItemUpdate`) — le secret relay ne peut plus être perdu lors d'un redémarrage brutal\n- CI : workflow YAML corrigé (Python dans script séparé), `open` désactivé en environnement CI\n- Build : relancement automatique de l'app après chaque build local",
+      "publishedAt": "2026-06-28T08:09:56Z"
+    },
     {
       "version": "1.1.0",
       "releaseNotes": "### Nouveautés\n- Schéma URL `webhookforge://trigger/{slug}` — déclenchez depuis Raycast, Shortcuts macOS ou scripts shell\n- Dialog de mise à jour avec notes de release et boutons Annuler / Mettre à jour\n- Onglet \"Nouveautés\" dans les Réglages avec historique complet des versions\n- Retry automatique des sessions Claude Code (jusqu'à 3 tentatives, délai 2s entre chaque)\n- Bouton \"Un problème ?\" avec logo GitHub dans la barre d'outils — ouvre directement les issues\n\n### Améliorations\n- Versioning sémantique (v1.x.x) — les releases suivent désormais semver",
