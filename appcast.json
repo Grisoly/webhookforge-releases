@@ -1,12 +1,17 @@
 {
-  "version": "1.2.8",
-  "build": "171",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.2.8/WebhookForge.zip",
-  "sha256": "e661cffdde06578f5f41c3a2f7d608732d19c790f71b73b95bf3183abf732284",
-  "releaseNotes": "### Corrections\n- Keychain : revert du changement v1.2.7 — `kSecUseDataProtectionKeychain` nécessite l'entitlement `keychain-access-groups` (non présent) et bloquait silencieusement toutes les écritures Keychain (relay secret non sauvegardé, relay jamais connecté)",
+  "version": "1.2.9",
+  "build": "172",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.2.9/WebhookForge.zip",
+  "sha256": "4622f4bc862aedad7e664feb198bb1ad992907fc4573a8b6f9483e2f49d97259",
+  "releaseNotes": "### Corrections\n- Quick Actions Finder : remplacement de `python3` par `perl` (toujours disponible sur macOS, sans dépendance Xcode) — corrige l'erreur \"L'entrée du service a provoqué un problème\"\n- Quick Actions Finder : passage en mode stdin (`inputMethod=0`) — les chemins sont lus ligne par ligne, plus robuste que le passage par arguments",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T19:48:34Z",
+  "publishedAt": "2026-06-28T19:56:48Z",
   "history": [
+    {
+      "version": "1.2.8",
+      "releaseNotes": "### Corrections\n- Keychain : revert du changement v1.2.7 — `kSecUseDataProtectionKeychain` nécessite l'entitlement `keychain-access-groups` (non présent) et bloquait silencieusement toutes les écritures Keychain (relay secret non sauvegardé, relay jamais connecté)",
+      "publishedAt": "2026-06-28T19:48:34Z"
+    },
     {
       "version": "1.2.7",
       "releaseNotes": "### Corrections\n- Keychain : relay secret et HMAC secrets migrent vers le \"data protection keychain\" (style iOS) — les items ne sont plus liés à la signature du binaire, ils persistent désormais entre rebuilds Debug sans demander le secret à chaque redémarrage\n- CI : xcodeproj commité — QuickActionInstaller.swift inclus dans le build CI\n- Quick Actions : incluses dans la release CI (build réussi)",
