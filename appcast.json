@@ -1,12 +1,17 @@
 {
-  "version": "1.1.0",
-  "build": "144",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.0/WebhookForge.zip",
-  "sha256": "abb667fee4ba9abc806e244c4280be463eb5d48051e5c0f55454ac5a59765e3a",
-  "releaseNotes": "### Nouveautés\n- Schéma URL `webhookforge://trigger/{slug}` — déclenchez depuis Raycast, Shortcuts macOS ou scripts shell\n- Dialog de mise à jour avec notes de release et boutons Annuler / Mettre à jour\n- Onglet \"Nouveautés\" dans les Réglages avec historique complet des versions\n- Retry automatique des sessions Claude Code (jusqu'à 3 tentatives, délai 2s entre chaque)\n- Bouton \"Un problème ?\" avec logo GitHub dans la barre d'outils — ouvre directement les issues\n\n### Améliorations\n- Versioning sémantique (v1.x.x) — les releases suivent désormais semver",
+  "version": "1.1.1",
+  "build": "147",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.1/WebhookForge.zip",
+  "sha256": "8d15c31f72d4e62959f8d04e05253df98802b424e95f340adb5436d72980f506",
+  "releaseNotes": "### Corrections\n- Relay : reconnexion automatique dès que le secret ou l'URL est modifié dans les Réglages\n- Keychain : écriture atomique (`SecItemUpdate`) — le secret relay ne peut plus être perdu lors d'un redémarrage brutal\n- CI : workflow YAML corrigé (Python dans script séparé), `open` désactivé en environnement CI\n- Build : relancement automatique de l'app après chaque build local",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T07:39:43Z",
+  "publishedAt": "2026-06-28T08:09:56Z",
   "history": [
+    {
+      "version": "1.1.0",
+      "releaseNotes": "### Nouveautés\n- Schéma URL `webhookforge://trigger/{slug}` — déclenchez depuis Raycast, Shortcuts macOS ou scripts shell\n- Dialog de mise à jour avec notes de release et boutons Annuler / Mettre à jour\n- Onglet \"Nouveautés\" dans les Réglages avec historique complet des versions\n- Retry automatique des sessions Claude Code (jusqu'à 3 tentatives, délai 2s entre chaque)\n- Bouton \"Un problème ?\" avec logo GitHub dans la barre d'outils — ouvre directement les issues\n\n### Améliorations\n- Versioning sémantique (v1.x.x) — les releases suivent désormais semver",
+      "publishedAt": "2026-06-28T07:39:43Z"
+    },
     {
       "version": "1.0.0.131",
       "releaseNotes": "### Nouveautés\n- Schéma URL  — déclenchez depuis Raycast, Shortcuts macOS ou scripts shell\n- Dialog de mise à jour avec notes de release et boutons Annuler / Mettre à jour\n- Onglet Nouveautés dans les Réglages avec historique des versions\n- Surveillance de dossiers — déclenchement automatique de Claude Code à chaque changement\n- Service Finder clic droit — Surveiller le dossier et Importer dans un dossier surveillé\n- Panneau d'import flottant (⌃⌥⌘A)\n- Icône orange sur les dossiers surveillés avec badge Claude\n\n### Améliorations\n- Terminal des surveillances unifié : ligne $ verte, accordéons outils, favicon Claude\n- Sidebar : section Webhooks + Webhooks configurés\n- Dashboard : comptage tâches planifiées actives uniquement",
