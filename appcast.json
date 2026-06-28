@@ -1,10 +1,16 @@
 {
-  "version": "1.0.0.131",
-  "build": "131",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.0.0.131/WebhookForge.zip",
-  "sha256": "7d8ba4cc6b8db29612c05229220de80881b5e3f8e2ca7ac9de5a396a0ccd8646",
-  "releaseNotes": "### Nouveautés\n- Schéma URL  — déclenchez depuis Raycast, Shortcuts macOS ou scripts shell\n- Dialog de mise à jour avec notes de release et boutons Annuler / Mettre à jour\n- Onglet Nouveautés dans les Réglages avec historique des versions\n- Surveillance de dossiers — déclenchement automatique de Claude Code à chaque changement\n- Service Finder clic droit — Surveiller le dossier et Importer dans un dossier surveillé\n- Panneau d'import flottant (⌃⌥⌘A)\n- Icône orange sur les dossiers surveillés avec badge Claude\n\n### Améliorations\n- Terminal des surveillances unifié : ligne $ verte, accordéons outils, favicon Claude\n- Sidebar : section Webhooks + Webhooks configurés\n- Dashboard : comptage tâches planifiées actives uniquement",
+  "version": "1.1.0",
+  "build": "144",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.0/WebhookForge.zip",
+  "sha256": "abb667fee4ba9abc806e244c4280be463eb5d48051e5c0f55454ac5a59765e3a",
+  "releaseNotes": "### Nouveautés\n- Schéma URL `webhookforge://trigger/{slug}` — déclenchez depuis Raycast, Shortcuts macOS ou scripts shell\n- Dialog de mise à jour avec notes de release et boutons Annuler / Mettre à jour\n- Onglet \"Nouveautés\" dans les Réglages avec historique complet des versions\n- Retry automatique des sessions Claude Code (jusqu'à 3 tentatives, délai 2s entre chaque)\n- Bouton \"Un problème ?\" avec logo GitHub dans la barre d'outils — ouvre directement les issues\n\n### Améliorations\n- Versioning sémantique (v1.x.x) — les releases suivent désormais semver",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T06:41:33Z",
-  "history": []
+  "publishedAt": "2026-06-28T07:39:43Z",
+  "history": [
+    {
+      "version": "1.0.0.131",
+      "releaseNotes": "### Nouveautés\n- Schéma URL  — déclenchez depuis Raycast, Shortcuts macOS ou scripts shell\n- Dialog de mise à jour avec notes de release et boutons Annuler / Mettre à jour\n- Onglet Nouveautés dans les Réglages avec historique des versions\n- Surveillance de dossiers — déclenchement automatique de Claude Code à chaque changement\n- Service Finder clic droit — Surveiller le dossier et Importer dans un dossier surveillé\n- Panneau d'import flottant (⌃⌥⌘A)\n- Icône orange sur les dossiers surveillés avec badge Claude\n\n### Améliorations\n- Terminal des surveillances unifié : ligne $ verte, accordéons outils, favicon Claude\n- Sidebar : section Webhooks + Webhooks configurés\n- Dashboard : comptage tâches planifiées actives uniquement",
+      "publishedAt": "2026-06-28T06:41:33Z"
+    }
+  ]
 }
