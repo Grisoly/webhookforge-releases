@@ -1,12 +1,17 @@
 {
-  "version": "1.1.6",
-  "build": "156",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.6/WebhookForge.zip",
-  "sha256": "db4d34f2aa25a80cac82b714aad3e175ffe9668df22e742f7d440ffc7871207e",
-  "releaseNotes": "### Corrections\n- Bouton GitHub : \"Signaler un problème\" + icône toujours visibles dans la zone native macOS 26 (plus d'animation instable)\n- Footer : \"WebhookForge — v1.1.6\" centré (ZStack)\n- Releases GitHub : descriptions détaillées depuis CHANGELOG",
+  "version": "1.1.7",
+  "build": "157",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.7/WebhookForge.zip",
+  "sha256": "ed61aa74c9f3c1ea4357250142686cd66ce4e15892d4069502d9631fc3d86435",
+  "releaseNotes": "### Nouveautés\n- Réglages : onglet Général en première position\n- Réglages → Général : section \"Schéma URL\" avec exemples Raycast, Shell, macOS Shortcuts\n- Réglages → Sessions : section \"Journaux\" — voir et exporter tous les logs Claude Code en `.txt`\n- Réglages → Sessions : nombre de sessions parallèles affiché à côté des boutons +/-",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T09:27:36Z",
+  "publishedAt": "2026-06-28T09:45:19Z",
   "history": [
+    {
+      "version": "1.1.6",
+      "releaseNotes": "### Corrections\n- Bouton GitHub : \"Signaler un problème\" + icône toujours visibles dans la zone native macOS 26 (plus d'animation instable)\n- Footer : \"WebhookForge — v1.1.6\" centré (ZStack)\n- Releases GitHub : descriptions détaillées depuis CHANGELOG",
+      "publishedAt": "2026-06-28T09:27:36Z"
+    },
     {
       "version": "1.1.5",
       "releaseNotes": "### Corrections\n- Bouton GitHub : curseur pointer actif sur tout le bouton (icône + texte animé)\n- Footer : \"WebhookForge — v1.1.5\" centré via ZStack (indépendant des largeurs gauche/droite)\n- Releases GitHub : les descriptions incluent désormais le détail des nouveautés et corrections (extrait du CHANGELOG)",
