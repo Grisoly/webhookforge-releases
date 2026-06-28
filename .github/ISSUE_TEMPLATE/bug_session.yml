@@ -2,6 +2,7 @@ name: 🤖 Problème Session Claude Code
 description: Signaler un problème avec une session Claude Code (crash, timeout, retry, tokens)
 title: "[Session Claude] "
 labels: ["bug", "claude-session"]
+assignees: [WEB-DESIGN-PROD]
 body:
   - type: markdown
     attributes:
@@ -71,4 +72,3 @@ body:
     attributes:
       label: Contexte additionnel
       placeholder: "Type de session (webhook / tâche / watcher), mode template, système prompt, etc."
-
