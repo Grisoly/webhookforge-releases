@@ -1,12 +1,17 @@
 {
-  "version": "1.1.4",
-  "build": "153",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.4/WebhookForge.zip",
-  "sha256": "fa1f1697fc65fe1177d6438743126e4a3438582f48e78bc126073fe27279985d",
-  "releaseNotes": "### Corrections\n- CI : runner mis à jour vers macOS 26 — les releases ont maintenant le bon look Tahoe (arrondis, chrome fenêtre)\n- Logo GitHub : rendu vectoriel net depuis l'asset catalog (plus de rasterisation SVG flou)",
+  "version": "1.1.5",
+  "build": "155",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.5/WebhookForge.zip",
+  "sha256": "450b3e89ae901f0386635cb2a6a6e53b3cdda5b26eff374c0439d51d97270372",
+  "releaseNotes": "### Corrections\n- Bouton GitHub : curseur pointer actif sur tout le bouton (icône + texte animé)\n- Footer : \"WebhookForge — v1.1.5\" centré via ZStack (indépendant des largeurs gauche/droite)\n- Releases GitHub : les descriptions incluent désormais le détail des nouveautés et corrections (extrait du CHANGELOG)",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T08:33:34Z",
+  "publishedAt": "2026-06-28T08:46:57Z",
   "history": [
+    {
+      "version": "1.1.4",
+      "releaseNotes": "### Corrections\n- CI : runner mis à jour vers macOS 26 — les releases ont maintenant le bon look Tahoe (arrondis, chrome fenêtre)\n- Logo GitHub : rendu vectoriel net depuis l'asset catalog (plus de rasterisation SVG flou)",
+      "publishedAt": "2026-06-28T08:33:34Z"
+    },
     {
       "version": "1.1.3",
       "releaseNotes": "### Nouveautés\n- Footer : version de l'app affichée au centre (`v1.1.3`)\n\n### Corrections\n- Mise à jour : l'app se ferme maintenant immédiatement après installation (plus de blocage sur la barre de progression)\n- Relay : reconnexion automatique dès que le secret ou l'URL est modifié dans les Réglages\n- Keychain : écriture atomique (`SecItemUpdate`) — le secret relay ne peut plus être perdu lors d'un redémarrage brutal",
