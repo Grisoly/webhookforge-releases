@@ -1,0 +1,78 @@
+name: 🕐 Problème Tâche planifiée
+description: Signaler un problème avec une tâche planifiée (déclenchement, exécution, notification)
+title: "[Tâche planifiée] "
+labels: ["bug", "scheduled-task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de remplir ce formulaire. Plus vous donnez de détails, plus vite le problème sera résolu.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version de WebhookForge
+      placeholder: "ex : 1.0.0.131"
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: Version macOS
+      placeholder: "ex : macOS 15.4 Sequoia"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem_type
+    attributes:
+      label: Type de problème
+      options:
+        - Tâche non déclenchée à lheure prévue
+        - Tâche déclenchée au mauvais moment
+        - Session Claude Code échouée
+        - Notification push non reçue
+        - Tâche bloquée en statut "En cours"
+        - Récupération de tâche manquée (missed) incorrecte
+        - Autre
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description du problème
+    validations:
+      required: true
+
+  - type: dropdown
+    id: schedule_type
+    attributes:
+      label: Type de planification configuré
+      options:
+        - Une fois (once)
+        - Jours de la semaine (weeklyDays)
+        - Mensuel (monthly)
+        - Intervalle fixe (interval)
+    validations:
+      required: false
+
+  - type: input
+    id: schedule_detail
+    attributes:
+      label: Détail du planning
+      placeholder: "ex : Tous les lundis à 09h00 / Toutes les 60 min"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs de la session (copiez depuis TaskDetailView → historique des exécutions)
+      render: text
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexte additionnel
+      placeholder: "Répertoire de travail, prompt utilisé (sans données sensibles), etc."
+
