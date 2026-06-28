@@ -1,12 +1,17 @@
 {
-  "version": "1.2.2",
-  "build": "165",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.2.2/WebhookForge.zip",
-  "sha256": "6f5be1befcbd6d2f28a540faea93333760a8cf5aeaad4e420a121077c5e113c5",
-  "releaseNotes": "### Corrections\n- Services Finder (clic-droit) : réenregistrement Launch Services après mise à jour automatique (`lsregister -f` ajouté dans le script d'installation)\n- Build local : désins­cription automatique de la version DerivedData après chaque build pour éviter le conflit NSServices",
+  "version": "1.2.3",
+  "build": "166",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.2.3/WebhookForge.zip",
+  "sha256": "6829629b3bab083b983018320900d3d6dedc8d15276e7040e73d117f7e37219d",
+  "releaseNotes": "### Corrections\n- Relay : connexion WebSocket stable sur macOS 26 beta — `URLSession.shared` recyclait mal les connexions TCP causant un échec immédiat après l'upgrade WebSocket (101). Correction : URLSession dédiée avec pipelining désactivé.\n- NSServices : `NSPortName` aligné sur le CFBundleIdentifier (`app.webhookforge.app`) pour correspondre au port Mach enregistré par AppKit sur macOS moderne",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T18:41:02Z",
+  "publishedAt": "2026-06-28T19:16:48Z",
   "history": [
+    {
+      "version": "1.2.2",
+      "releaseNotes": "### Corrections\n- Services Finder (clic-droit) : réenregistrement Launch Services après mise à jour automatique (`lsregister -f` ajouté dans le script d'installation)\n- Build local : désins­cription automatique de la version DerivedData après chaque build pour éviter le conflit NSServices",
+      "publishedAt": "2026-06-28T18:41:02Z"
+    },
     {
       "version": "1.2.1",
       "releaseNotes": "### Corrections\n- Services Finder (clic-droit) : \"Surveiller le dossier\" et \"Importer dans un dossier surveillé\" fonctionnent à nouveau sur macOS 26 — `nonisolated` + `DispatchQueue.main.async` bloquaient silencieusement les appels NSServices",
