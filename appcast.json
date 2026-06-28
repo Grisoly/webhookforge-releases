@@ -1,12 +1,17 @@
 {
-  "version": "1.2.3",
-  "build": "166",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.2.3/WebhookForge.zip",
-  "sha256": "6829629b3bab083b983018320900d3d6dedc8d15276e7040e73d117f7e37219d",
-  "releaseNotes": "### Corrections\n- Relay : connexion WebSocket stable sur macOS 26 beta — `URLSession.shared` recyclait mal les connexions TCP causant un échec immédiat après l'upgrade WebSocket (101). Correction : URLSession dédiée avec pipelining désactivé.\n- NSServices : `NSPortName` aligné sur le CFBundleIdentifier (`app.webhookforge.app`) pour correspondre au port Mach enregistré par AppKit sur macOS moderne",
+  "version": "1.2.4",
+  "build": "167",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.2.4/WebhookForge.zip",
+  "sha256": "91f695296206d5102732e7263ef61dd2c2152cb4ef9a2762f150db60cc7ef82e",
+  "releaseNotes": "### Corrections\n- Mise à jour : le vérificateur ignorait le cache HTTP — il pouvait signaler \"à jour\" même si une nouvelle version était disponible sur GitHub",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T19:16:48Z",
+  "publishedAt": "2026-06-28T19:20:42Z",
   "history": [
+    {
+      "version": "1.2.3",
+      "releaseNotes": "### Corrections\n- Relay : connexion WebSocket stable sur macOS 26 beta — `URLSession.shared` recyclait mal les connexions TCP causant un échec immédiat après l'upgrade WebSocket (101). Correction : URLSession dédiée avec pipelining désactivé.\n- NSServices : `NSPortName` aligné sur le CFBundleIdentifier (`app.webhookforge.app`) pour correspondre au port Mach enregistré par AppKit sur macOS moderne",
+      "publishedAt": "2026-06-28T19:16:48Z"
+    },
     {
       "version": "1.2.2",
       "releaseNotes": "### Corrections\n- Services Finder (clic-droit) : réenregistrement Launch Services après mise à jour automatique (`lsregister -f` ajouté dans le script d'installation)\n- Build local : désins­cription automatique de la version DerivedData après chaque build pour éviter le conflit NSServices",
