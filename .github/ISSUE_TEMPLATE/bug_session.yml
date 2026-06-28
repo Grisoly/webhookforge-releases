@@ -1,0 +1,74 @@
+name: 🤖 Problème Session Claude Code
+description: Signaler un problème avec une session Claude Code (crash, timeout, retry, tokens)
+title: "[Session Claude] "
+labels: ["bug", "claude-session"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de remplir ce formulaire. Plus vous donnez de détails, plus vite le problème sera résolu.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version de WebhookForge
+      placeholder: "ex : 1.0.0.131"
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: Version macOS
+      placeholder: "ex : macOS 15.4 Sequoia"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem_type
+    attributes:
+      label: Type de problème
+      options:
+        - Claude Code introuvable (binaire absent)
+        - Session ne démarre pas (erreur de lancement)
+        - Crash immédiat (code de sortie non nul)
+        - Les 3 tentatives de retry ont échoué
+        - Session bloquée sans réponse (timeout)
+        - Quota tokens dépassé
+        - Résultat incorrect ou incomplet
+        - Session --resume échouée (édition)
+        - Autre
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description du problème
+    validations:
+      required: true
+
+  - type: input
+    id: model
+    attributes:
+      label: Modèle Claude utilisé
+      placeholder: "ex : claude-sonnet-4-6"
+
+  - type: input
+    id: exit_code
+    attributes:
+      label: Code de sortie du process (si visible dans les logs)
+      placeholder: "ex : 1, 127, -1"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs de la session (copiez depuis la vue terminal)
+      render: text
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexte additionnel
+      placeholder: "Type de session (webhook / tâche / watcher), mode template, système prompt, etc."
+
