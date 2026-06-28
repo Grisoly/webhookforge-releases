@@ -1,12 +1,17 @@
 {
-  "version": "1.2.1",
-  "build": "164",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.2.1/WebhookForge.zip",
-  "sha256": "146e47402bc038c2cf5ce11b24100d649b6e40a2ff38082bdb0500131d7588c0",
-  "releaseNotes": "### Corrections\n- Services Finder (clic-droit) : \"Surveiller le dossier\" et \"Importer dans un dossier surveillé\" fonctionnent à nouveau sur macOS 26 — `nonisolated` + `DispatchQueue.main.async` bloquaient silencieusement les appels NSServices",
+  "version": "1.2.2",
+  "build": "165",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.2.2/WebhookForge.zip",
+  "sha256": "6f5be1befcbd6d2f28a540faea93333760a8cf5aeaad4e420a121077c5e113c5",
+  "releaseNotes": "### Corrections\n- Services Finder (clic-droit) : réenregistrement Launch Services après mise à jour automatique (`lsregister -f` ajouté dans le script d'installation)\n- Build local : désins­cription automatique de la version DerivedData après chaque build pour éviter le conflit NSServices",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T17:59:59Z",
+  "publishedAt": "2026-06-28T18:41:02Z",
   "history": [
+    {
+      "version": "1.2.1",
+      "releaseNotes": "### Corrections\n- Services Finder (clic-droit) : \"Surveiller le dossier\" et \"Importer dans un dossier surveillé\" fonctionnent à nouveau sur macOS 26 — `nonisolated` + `DispatchQueue.main.async` bloquaient silencieusement les appels NSServices",
+      "publishedAt": "2026-06-28T17:59:59Z"
+    },
     {
       "version": "1.2.0",
       "releaseNotes": "### Corrections\n- Dashboard : accord singulier/pluriel français correct pour 0 (\"0 tâche planifiée\", \"0 webhook configuré\", \"0 dossier surveillé\")",
