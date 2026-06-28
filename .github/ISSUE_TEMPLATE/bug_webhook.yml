@@ -2,6 +2,7 @@ name: 🪝 Problème Webhook
 description: Signaler un problème lié à la réception ou au traitement dun webhook
 title: "[Webhook] "
 labels: ["bug", "webhook"]
+assignees: [WEB-DESIGN-PROD]
 body:
   - type: markdown
     attributes:
@@ -69,4 +70,3 @@ body:
     attributes:
       label: Contexte additionnel
       placeholder: "Nom de lendpoint, configuration GitHub, relay utilisé, etc."
-
