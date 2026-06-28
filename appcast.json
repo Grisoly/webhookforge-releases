@@ -1,12 +1,17 @@
 {
-  "version": "1.2.9",
-  "build": "172",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.2.9/WebhookForge.zip",
-  "sha256": "4622f4bc862aedad7e664feb198bb1ad992907fc4573a8b6f9483e2f49d97259",
-  "releaseNotes": "### Corrections\n- Quick Actions Finder : remplacement de `python3` par `perl` (toujours disponible sur macOS, sans dépendance Xcode) — corrige l'erreur \"L'entrée du service a provoqué un problème\"\n- Quick Actions Finder : passage en mode stdin (`inputMethod=0`) — les chemins sont lus ligne par ligne, plus robuste que le passage par arguments",
+  "version": "1.3.0",
+  "build": "173",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.3.0/WebhookForge.zip",
+  "sha256": "37a115926ca2af39ae5c3198292c87756a78f71c5caffad6898bcb85504fcff3",
+  "releaseNotes": "### Corrections\n- Quick Actions Finder : passage de \"Run Shell Script\" à \"Run AppleScript\" — l'action AppleScript reçoit les items Finder nativement dans `input` sans conversion de type, contournant le bug macOS 26 beta où la conversion `public.folder` → `com.apple.cocoa.path` cassait l'invocation avec \"L'entrée du service a provoqué un problème\"\n- Quick Actions Finder : ajout de `version.plist` dans le bundle workflow (présent dans tous les workflows système, son absence causait une invocation silencieusement incorrecte depuis Finder)\n- Quick Actions Finder : `AMAccepts.Types` vide + `Optional: true` — Automator ne tente plus aucune conversion de type et passe les items directement à AppleScript\n- Quick Actions Finder : script perl réécrit sans double-quotes (`chr(37)` au lieu de `\"%\"`, `sprintf(q{%02X})` au lieu de `sprintf(\"%02X\")`) — compatible avec les contraintes des chaînes AppleScript",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T19:56:48Z",
+  "publishedAt": "2026-06-28T20:15:11Z",
   "history": [
+    {
+      "version": "1.2.9",
+      "releaseNotes": "### Corrections\n- Quick Actions Finder : remplacement de `python3` par `perl` (toujours disponible sur macOS, sans dépendance Xcode) — corrige l'erreur \"L'entrée du service a provoqué un problème\"\n- Quick Actions Finder : passage en mode stdin (`inputMethod=0`) — les chemins sont lus ligne par ligne, plus robuste que le passage par arguments",
+      "publishedAt": "2026-06-28T19:56:48Z"
+    },
     {
       "version": "1.2.8",
       "releaseNotes": "### Corrections\n- Keychain : revert du changement v1.2.7 — `kSecUseDataProtectionKeychain` nécessite l'entitlement `keychain-access-groups` (non présent) et bloquait silencieusement toutes les écritures Keychain (relay secret non sauvegardé, relay jamais connecté)",
