@@ -1,0 +1,72 @@
+name: 🪝 Problème Webhook
+description: Signaler un problème lié à la réception ou au traitement dun webhook
+title: "[Webhook] "
+labels: ["bug", "webhook"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de remplir ce formulaire. Plus vous donnez de détails, plus vite le problème sera résolu.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version de WebhookForge
+      placeholder: "ex : 1.0.0.131 (visible dans Réglages → Nouveautés)"
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: Version macOS
+      placeholder: "ex : macOS 15.4 Sequoia"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem_type
+    attributes:
+      label: Type de problème
+      options:
+        - Webhook non reçu par lapp (relay connecté)
+        - Webhook reçu mais ignoré (endpoint inactif ?)
+        - Repo GitHub non créé / erreur clone
+        - Session Claude Code ne démarre pas
+        - Erreur lors de la génération du site
+        - Preview / serveur de développement non disponible
+        - Autre
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description du problème
+      placeholder: "Décrivez ce qui se passe, ce que vous attendiez, et ce que vous obtenez à la place."
+    validations:
+      required: true
+
+  - type: textarea
+    id: payload
+    attributes:
+      label: Payload reçu (JSON, masquez les données sensibles)
+      render: json
+      placeholder: |
+        {
+          "nom": "...",
+          "email": "..."
+        }
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs de la session (copiez depuis la vue détail du projet)
+      render: text
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexte additionnel
+      placeholder: "Nom de lendpoint, configuration GitHub, relay utilisé, etc."
+
