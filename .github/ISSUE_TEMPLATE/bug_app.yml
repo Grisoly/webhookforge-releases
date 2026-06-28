@@ -2,6 +2,7 @@ name: ⚙️ Problème Application
 description: Signaler un problème général (raccourci clavier, clic-droit, drag & drop, mise à jour, réglages…)
 title: "[App] "
 labels: ["bug", "app"]
+assignees: [WEB-DESIGN-PROD]
 body:
   - type: markdown
     attributes:
@@ -81,4 +82,3 @@ body:
     attributes:
       label: Contexte additionnel
       placeholder: "Captures décran, logs, fréquence du problème..."
-
