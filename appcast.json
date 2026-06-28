@@ -1,12 +1,17 @@
 {
-  "version": "1.2.4",
-  "build": "167",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.2.4/WebhookForge.zip",
-  "sha256": "91f695296206d5102732e7263ef61dd2c2152cb4ef9a2762f150db60cc7ef82e",
-  "releaseNotes": "### Corrections\n- Mise à jour : le vérificateur ignorait le cache HTTP — il pouvait signaler \"à jour\" même si une nouvelle version était disponible sur GitHub",
+  "version": "1.2.7",
+  "build": "170",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.2.7/WebhookForge.zip",
+  "sha256": "a9f3bbad1d7d0dea154a8bdcfff323ec9b12f78c144b47d3baed2e5a23075289",
+  "releaseNotes": "### Corrections\n- Keychain : relay secret et HMAC secrets migrent vers le \"data protection keychain\" (style iOS) — les items ne sont plus liés à la signature du binaire, ils persistent désormais entre rebuilds Debug sans demander le secret à chaque redémarrage\n- CI : xcodeproj commité — QuickActionInstaller.swift inclus dans le build CI\n- Quick Actions : incluses dans la release CI (build réussi)",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T19:20:42Z",
+  "publishedAt": "2026-06-28T19:45:01Z",
   "history": [
+    {
+      "version": "1.2.4",
+      "releaseNotes": "### Corrections\n- Mise à jour : le vérificateur ignorait le cache HTTP — il pouvait signaler \"à jour\" même si une nouvelle version était disponible sur GitHub",
+      "publishedAt": "2026-06-28T19:20:42Z"
+    },
     {
       "version": "1.2.3",
       "releaseNotes": "### Corrections\n- Relay : connexion WebSocket stable sur macOS 26 beta — `URLSession.shared` recyclait mal les connexions TCP causant un échec immédiat après l'upgrade WebSocket (101). Correction : URLSession dédiée avec pipelining désactivé.\n- NSServices : `NSPortName` aligné sur le CFBundleIdentifier (`app.webhookforge.app`) pour correspondre au port Mach enregistré par AppKit sur macOS moderne",
