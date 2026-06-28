@@ -1,12 +1,17 @@
 {
-  "version": "1.1.3",
-  "build": "151",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.3/WebhookForge.zip",
-  "sha256": "cf5f3f7b4ed5ef0cf19d47da7d062ca9915de21c1e3f96a0698ea83c93318fcf",
-  "releaseNotes": "### Nouveautés\n- Footer : version de l'app affichée au centre (`v1.1.3`)\n\n### Corrections\n- Mise à jour : l'app se ferme maintenant immédiatement après installation (plus de blocage sur la barre de progression)\n- Relay : reconnexion automatique dès que le secret ou l'URL est modifié dans les Réglages\n- Keychain : écriture atomique (`SecItemUpdate`) — le secret relay ne peut plus être perdu lors d'un redémarrage brutal",
+  "version": "1.1.4",
+  "build": "153",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.1.4/WebhookForge.zip",
+  "sha256": "fa1f1697fc65fe1177d6438743126e4a3438582f48e78bc126073fe27279985d",
+  "releaseNotes": "### Corrections\n- CI : runner mis à jour vers macOS 26 — les releases ont maintenant le bon look Tahoe (arrondis, chrome fenêtre)\n- Logo GitHub : rendu vectoriel net depuis l'asset catalog (plus de rasterisation SVG flou)",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-28T08:22:09Z",
+  "publishedAt": "2026-06-28T08:33:34Z",
   "history": [
+    {
+      "version": "1.1.3",
+      "releaseNotes": "### Nouveautés\n- Footer : version de l'app affichée au centre (`v1.1.3`)\n\n### Corrections\n- Mise à jour : l'app se ferme maintenant immédiatement après installation (plus de blocage sur la barre de progression)\n- Relay : reconnexion automatique dès que le secret ou l'URL est modifié dans les Réglages\n- Keychain : écriture atomique (`SecItemUpdate`) — le secret relay ne peut plus être perdu lors d'un redémarrage brutal",
+      "publishedAt": "2026-06-28T08:22:09Z"
+    },
     {
       "version": "1.1.2",
       "releaseNotes": "### Corrections\n- Mise à jour : l'app se ferme maintenant immédiatement après installation (plus de blocage sur la barre de progression)",
