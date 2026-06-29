@@ -1,12 +1,17 @@
 {
-  "version": "1.3.4",
-  "build": "177",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.3.4/WebhookForge.zip",
-  "sha256": "ec1c0dbac399c1706262cf59a3e7fba0fdfda904111c29a5a6658d13a4ae9024",
-  "releaseNotes": "### Corrections\n- Quick Actions Finder : `CFBundleName = \"WebhookForge\"` dans les bundles workflow — la source affichée dans le menu est maintenant `(WebhookForge)` au lieu de `(WebhookForge - Surveiller le dossier.workflow)`\n- Quick Actions Finder : re-enregistrement de l'app principale via `lsregister -u / -f` au démarrage — purge les entrées `(WebhookForge.app)` résiduelles du cache LaunchServices (présentes quand NSServices était encore dans l'Info.plist de l'app)",
+  "version": "1.3.5",
+  "build": "178",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.3.5/WebhookForge.zip",
+  "sha256": "3dffb40a45dfb3a4062d8a7db32a98a73812769561edf0a859bb1de3456a3830",
+  "releaseNotes": "### Corrections\n- Quick Actions Finder : `reregisterMainApp()` désinscrît maintenant tous les emplacements connus de WebhookForge.app (`~/Applications/`, `/Applications/`, bundle courant) avant le re-enregistrement — évite l'accumulation d'entrées NSServices résiduelles lors des rebuilds",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-29T05:19:03Z",
+  "publishedAt": "2026-06-29T05:25:43Z",
   "history": [
+    {
+      "version": "1.3.4",
+      "releaseNotes": "### Corrections\n- Quick Actions Finder : `CFBundleName = \"WebhookForge\"` dans les bundles workflow — la source affichée dans le menu est maintenant `(WebhookForge)` au lieu de `(WebhookForge - Surveiller le dossier.workflow)`\n- Quick Actions Finder : re-enregistrement de l'app principale via `lsregister -u / -f` au démarrage — purge les entrées `(WebhookForge.app)` résiduelles du cache LaunchServices (présentes quand NSServices était encore dans l'Info.plist de l'app)",
+      "publishedAt": "2026-06-29T05:19:03Z"
+    },
     {
       "version": "1.3.3",
       "releaseNotes": "### Corrections\n- Quick Actions Finder : chemin en format POSIX (`/Users/...`) au lieu de HFS (`Macintosh HD:Users:...`) — `POSIX path of theItem` en premier, `as text` en fallback seulement",
@@ -101,11 +106,6 @@
       "version": "1.1.3",
       "releaseNotes": "### Nouveautés\n- Footer : version de l'app affichée au centre (`v1.1.3`)\n\n### Corrections\n- Mise à jour : l'app se ferme maintenant immédiatement après installation (plus de blocage sur la barre de progression)\n- Relay : reconnexion automatique dès que le secret ou l'URL est modifié dans les Réglages\n- Keychain : écriture atomique (`SecItemUpdate`) — le secret relay ne peut plus être perdu lors d'un redémarrage brutal",
       "publishedAt": "2026-06-28T08:22:09Z"
-    },
-    {
-      "version": "1.1.2",
-      "releaseNotes": "### Corrections\n- Mise à jour : l'app se ferme maintenant immédiatement après installation (plus de blocage sur la barre de progression)",
-      "publishedAt": "2026-06-28T08:16:19Z"
     }
   ]
 }
