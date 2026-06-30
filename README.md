@@ -2,7 +2,7 @@
 
 **Orchestrez des workflows IA locaux depuis votre Mac — et depuis votre iPhone.**
 
-WebhookForge est une application macOS native (SwiftUI + AppKit) qui pilote automatiquement [Claude Code](https://claude.ai/code) à votre place : elle reçoit un déclencheur, lance une session IA complète dans votre environnement local, et vous livre un résultat — site web généré, rapport produit, fichiers classés, scripts exécutés.
+WebhookForge est une application macOS native (SwiftUI + AppKit) qui pilote automatiquement Claude Code à votre place : elle reçoit un déclencheur, lance une session IA complète dans votre environnement local, et vous livre un résultat — site web généré, rapport produit, fichiers classés, scripts exécutés.
 
 ---
 
@@ -19,8 +19,8 @@ WebhookForge est une application macOS native (SwiftUI + AppKit) qui pilote auto
 ### Prérequis
 
 - macOS 14 Sonoma ou supérieur
-- [Claude Code](https://claude.ai/code) installé et authentifié (`claude` dans le PATH)
-- [GitHub CLI](https://cli.github.com) installé et authentifié (`gh auth login`) — nécessaire uniquement pour les workflows avec création de repo
+- Claude Code installé et authentifié (`claude` dans le PATH)
+- GitHub CLI installé et authentifié (`gh auth login`) — nécessaire uniquement pour les workflows avec création de repo
 
 ---
 
@@ -38,7 +38,7 @@ Recevez des données depuis n'importe quel service externe (formulaires, Zapier,
 - Modification ultérieure via prompt texte, glisser-déposer d'image ou dictée vocale
 - Support multi-fichiers : plusieurs images/documents transmis ensemble = une seule session Claude
 
-**Exemple :** un formulaire de devis sur votre site envoie les données client → WebhookForge crée un repo `occiflow-lead-monentreprise`, copie le template choisi, laisse Claude personnaliser tout le site, et vous livre une URL de preview en quelques minutes.
+**Exemple :** un formulaire de devis sur votre site envoie les données client → WebhookForge crée un repo privé, copie le template choisi, laisse l'IA personnaliser tout le site, et vous livre une URL de preview en quelques minutes.
 
 ---
 
@@ -104,24 +104,6 @@ Envoyez des fichiers, photos et documents depuis votre iPhone directement vers v
 
 ---
 
-## Architecture technique
-
-```
-iPhone  ──WebSocket──►  Relay (relay.sbkdev-apps.com)  ──WebSocket──►  WebhookForge.app (Mac)
-Web / Zapier / Make  ──HTTPS──►  Relay  ──WebSocket──►  WebhookForge.app (Mac)
-                                                              │
-                                                              ▼
-                                                      claude (local)
-                                                      gh CLI (local)
-                                                      python3 / npm (local)
-```
-
-- **Relay** : serveur Node.js/TypeScript déployé sur Hetzner, protocole WebSocket sécurisé WSS
-- **Claude Code** : exécuté localement dans votre environnement, avec vos MCPs, vos credentials, votre quota Pro/Max
-- **Aucune donnée ne transite par nos serveurs** au-delà du routage WebSocket chiffré
-
----
-
 ## Mises à jour automatiques
 
 WebhookForge vérifie les mises à jour au démarrage et affiche une bannière dans le tableau de bord si une nouvelle version est disponible. L'installation se fait en un clic, sans intervention manuelle.
@@ -130,7 +112,7 @@ WebhookForge vérifie les mises à jour au démarrage et affiche une bannière d
 
 ## Confidentialité & Données
 
-Toutes les sessions IA sont exécutées **localement** sur votre Mac, avec votre propre installation de Claude Code et votre propre authentification (compte Claude.ai Pro/Max ou clé API Anthropic). WebhookForge n'a pas accès à vos données ni à vos échanges avec l'IA.
+Toutes les sessions IA sont exécutées **localement** sur votre Mac, avec votre propre installation et votre propre authentification auprès du fournisseur IA de votre choix. WebhookForge n'a pas accès à vos données ni à vos échanges avec l'IA.
 
 Consultez la [licence](./LICENSE) pour les conditions d'utilisation complètes.
 
