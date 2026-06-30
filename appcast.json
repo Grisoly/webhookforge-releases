@@ -1,12 +1,17 @@
 {
-  "version": "1.3.5",
-  "build": "178",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.3.5/WebhookForge.zip",
-  "sha256": "3dffb40a45dfb3a4062d8a7db32a98a73812769561edf0a859bb1de3456a3830",
-  "releaseNotes": "### Corrections\n- Quick Actions Finder : `reregisterMainApp()` désinscrît maintenant tous les emplacements connus de WebhookForge.app (`~/Applications/`, `/Applications/`, bundle courant) avant le re-enregistrement — évite l'accumulation d'entrées NSServices résiduelles lors des rebuilds",
+  "version": "1.4.0",
+  "build": "198",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.4.0/WebhookForge.zip",
+  "sha256": "79e2f1dfc96106be1e5118b9547fda11460813997abd0fe9b38206d9f60f54c9",
+  "releaseNotes": "### Nouveautés\n- iPhone companion : envoi de plusieurs photos/documents en une seule session Claude (regroupement par groupId)\n- iPhone companion : notifications push avec la vraie réponse de Claude (plus de texte générique)\n- iPhone companion : désappairage automatique côté iOS quand le Mac supprime l'appareil\n- iPhone companion : nom de l'appareil affiché correctement (simulateur + iPhone physique)\n\n### Corrections\n- Sessions dupliquées : 2 photos envoyées déclenchaient 2 sessions Claude → maintenant 1 seule session avec les 2 fichiers\n- Notification iOS générique → remplacée par le dernier message texte réel de Claude (capturé en streaming)",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-29T05:25:43Z",
+  "publishedAt": "2026-06-30T09:48:33Z",
   "history": [
+    {
+      "version": "1.3.5",
+      "releaseNotes": "### Corrections\n- Quick Actions Finder : `reregisterMainApp()` désinscrît maintenant tous les emplacements connus de WebhookForge.app (`~/Applications/`, `/Applications/`, bundle courant) avant le re-enregistrement — évite l'accumulation d'entrées NSServices résiduelles lors des rebuilds",
+      "publishedAt": "2026-06-29T05:25:43Z"
+    },
     {
       "version": "1.3.4",
       "releaseNotes": "### Corrections\n- Quick Actions Finder : `CFBundleName = \"WebhookForge\"` dans les bundles workflow — la source affichée dans le menu est maintenant `(WebhookForge)` au lieu de `(WebhookForge - Surveiller le dossier.workflow)`\n- Quick Actions Finder : re-enregistrement de l'app principale via `lsregister -u / -f` au démarrage — purge les entrées `(WebhookForge.app)` résiduelles du cache LaunchServices (présentes quand NSServices était encore dans l'Info.plist de l'app)",
@@ -101,11 +106,6 @@
       "version": "1.1.4",
       "releaseNotes": "### Corrections\n- CI : runner mis à jour vers macOS 26 — les releases ont maintenant le bon look Tahoe (arrondis, chrome fenêtre)\n- Logo GitHub : rendu vectoriel net depuis l'asset catalog (plus de rasterisation SVG flou)",
       "publishedAt": "2026-06-28T08:33:34Z"
-    },
-    {
-      "version": "1.1.3",
-      "releaseNotes": "### Nouveautés\n- Footer : version de l'app affichée au centre (`v1.1.3`)\n\n### Corrections\n- Mise à jour : l'app se ferme maintenant immédiatement après installation (plus de blocage sur la barre de progression)\n- Relay : reconnexion automatique dès que le secret ou l'URL est modifié dans les Réglages\n- Keychain : écriture atomique (`SecItemUpdate`) — le secret relay ne peut plus être perdu lors d'un redémarrage brutal",
-      "publishedAt": "2026-06-28T08:22:09Z"
     }
   ]
 }
