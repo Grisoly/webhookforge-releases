@@ -1,0 +1,139 @@
+LICENCE D'UTILISATION WEBHOOKFORGE
+Version 1.0 — 2025
+
+Copyright © 2025–2026 WEB-DESIGN-PROD. Tous droits réservés.
+
+---
+
+PRÉAMBULE
+
+WebhookForge est une application macOS qui agit comme orchestrateur local de sessions
+d'intelligence artificielle. Elle ne fournit pas elle-même de service d'IA : elle pilote
+des outils tiers (notamment Claude Code d'Anthropic) installés et authentifiés par
+l'utilisateur final sur son propre équipement, avec ses propres identifiants et son
+propre abonnement ou quota.
+
+---
+
+ARTICLE 1 — CONCESSION DE LICENCE
+
+WEB-DESIGN-PROD concède à l'utilisateur final une licence personnelle, non exclusive,
+non transférable et révocable lui permettant d'installer et d'utiliser WebhookForge
+sur ses propres appareils, à des fins personnelles ou professionnelles internes.
+
+Sont interdits sans autorisation écrite préalable de WEB-DESIGN-PROD :
+- la redistribution, la revente ou la mise à disposition du logiciel à des tiers ;
+- la modification, la décompilation ou l'ingénierie inverse du logiciel ;
+- l'exploitation commerciale du logiciel en tant que service (SaaS, rebranding, etc.).
+
+---
+
+ARTICLE 2 — INDÉPENDANCE VIS-À-VIS DES FOURNISSEURS D'IA
+
+WebhookForge s'appuie sur des outils et services d'intelligence artificielle tiers,
+notamment mais sans s'y limiter :
+
+  - Claude Code et les modèles Claude (Anthropic PBC)
+  - Les modèles Gemini (Google LLC)
+  - Les modèles GPT et o-series (OpenAI LLC)
+  - Tout autre fournisseur de modèle de langage (LLM) susceptible d'être intégré
+    dans des versions futures de l'application.
+
+WEB-DESIGN-PROD n'est pas affilié à ces fournisseurs et n'exerce aucun contrôle sur :
+
+  a) leurs conditions générales d'utilisation, leurs politiques tarifaires, leurs
+     quotas ou leurs restrictions d'usage ;
+  b) les modifications, restrictions, interruptions ou suppressions de leurs API,
+     CLI ou services qui rendraient WebhookForge partiellement ou totalement
+     inopérant ;
+  c) leurs politiques de confidentialité et le traitement des données soumises
+     à leurs modèles.
+
+WEB-DESIGN-PROD ne saurait être tenu responsable de toute impossibilité d'utiliser
+WebhookForge résultant d'un changement de politique, d'une interruption de service
+ou d'une modification technique décidée unilatéralement par l'un de ces fournisseurs.
+L'utilisateur reconnaît assumer seul le risque lié à la dépendance envers ces
+services tiers.
+
+---
+
+ARTICLE 3 — RESPONSABILITÉ RELATIVE AUX DONNÉES TRAITÉES PAR L'IA
+
+3.1  UTILISATION DU COMPTE PERSONNEL DE L'UTILISATEUR
+
+WebhookForge exécute les sessions d'IA en utilisant exclusivement le binaire Claude Code
+(ou tout autre outil IA équivalent) installé localement sur l'équipement de l'utilisateur,
+avec l'authentification et les identifiants propres à l'utilisateur (compte Claude.ai,
+clé API Anthropic, ou tout autre credential configuré par l'utilisateur).
+
+L'utilisateur est le seul titulaire du contrat d'abonnement ou du compte qui autorise
+ces traitements. WEB-DESIGN-PROD ne collecte pas, ne stocke pas, ne transmet pas et
+n'a pas accès aux données soumises aux modèles d'IA via WebhookForge.
+
+3.2  DONNÉES TRANSMISES AUX FOURNISSEURS D'IA
+
+Toute donnée — texte, image, fichier, document ou information personnelle — soumise
+à un modèle d'IA via WebhookForge est transmise directement entre l'équipement de
+l'utilisateur et les serveurs du fournisseur d'IA concerné, conformément aux conditions
+générales et à la politique de confidentialité de ce fournisseur.
+
+Le traitement, le stockage éventuel, la conservation ou l'utilisation de ces données
+par le fournisseur d'IA sont régis exclusivement par les politiques dudit fournisseur,
+et non par WEB-DESIGN-PROD.
+
+L'utilisateur reconnaît et accepte que :
+
+  a) WEB-DESIGN-PROD ne peut pas être tenu responsable du traitement des données
+     par les fournisseurs d'IA tiers ;
+  b) il lui appartient de vérifier et d'accepter les conditions de confidentialité
+     du fournisseur d'IA qu'il utilise (notamment la politique d'Anthropic disponible
+     sur https://www.anthropic.com/legal/privacy) avant de soumettre des données
+     sensibles ou personnelles ;
+  c) l'analyse de fichiers tiers, données clients, informations confidentielles ou
+     données à caractère personnel via WebhookForge s'effectue sous la seule
+     responsabilité de l'utilisateur, conformément aux lois applicables en matière
+     de protection des données (RGPD, CCPA, etc.) et aux obligations contractuelles
+     qui lui incombent vis-à-vis des personnes concernées.
+
+3.3  DONNÉES DE ROUTAGE
+
+Le relay WebSocket (relay.sbkdev-apps.com) utilisé par WebhookForge achemine les
+messages chiffrés (WSS/TLS) entre les services sources et l'application macOS. Ce relay
+ne déchiffre pas, ne stocke pas et n'exploite pas le contenu des messages. Seules des
+métadonnées techniques transitoires (identifiants de session, horodatages) sont
+conservées le temps strictement nécessaire au routage.
+
+---
+
+ARTICLE 4 — EXCLUSION DE GARANTIE
+
+LE LOGICIEL EST FOURNI « EN L'ÉTAT », SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU
+IMPLICITE, Y COMPRIS MAIS SANS S'Y LIMITER LES GARANTIES DE QUALITÉ MARCHANDE,
+D'ADÉQUATION À UN USAGE PARTICULIER ET D'ABSENCE DE CONTREFAÇON.
+
+WEB-DESIGN-PROD ne garantit pas que le logiciel sera exempt d'erreurs, qu'il
+fonctionnera de manière ininterrompue ou qu'il sera compatible avec toute version
+future des outils tiers dont il dépend.
+
+---
+
+ARTICLE 5 — LIMITATION DE RESPONSABILITÉ
+
+En aucun cas WEB-DESIGN-PROD ne pourra être tenu responsable de dommages directs,
+indirects, accessoires, spéciaux, exemplaires ou consécutifs (notamment perte de
+données, perte de revenus, interruption d'activité) résultant de l'utilisation ou
+de l'impossibilité d'utiliser le logiciel, même si WEB-DESIGN-PROD a été informé
+de la possibilité de tels dommages.
+
+---
+
+ARTICLE 6 — DROIT APPLICABLE
+
+La présente licence est régie par le droit français. Tout litige relatif à son
+interprétation ou son exécution sera soumis aux tribunaux compétents du ressort
+de Paris, France.
+
+---
+
+Pour toute question concernant cette licence : contact via le dépôt GitHub
+https://github.com/WEB-DESIGN-PROD/webhookforge-releases
