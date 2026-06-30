@@ -86,9 +86,8 @@ L'utilisateur reconnaît et accepte que :
   a) WEB-DESIGN-PROD ne peut pas être tenu responsable du traitement des données
      par les fournisseurs d'IA tiers ;
   b) il lui appartient de vérifier et d'accepter les conditions de confidentialité
-     du fournisseur d'IA qu'il utilise (notamment la politique d'Anthropic disponible
-     sur https://www.anthropic.com/legal/privacy) avant de soumettre des données
-     sensibles ou personnelles ;
+     du fournisseur d'IA qu'il utilise avant de soumettre des données sensibles
+     ou personnelles ;
   c) l'analyse de fichiers tiers, données clients, informations confidentielles ou
      données à caractère personnel via WebhookForge s'effectue sous la seule
      responsabilité de l'utilisateur, conformément aux lois applicables en matière
@@ -97,11 +96,11 @@ L'utilisateur reconnaît et accepte que :
 
 3.3  DONNÉES DE ROUTAGE
 
-Le relay WebSocket (relay.sbkdev-apps.com) utilisé par WebhookForge achemine les
-messages chiffrés (WSS/TLS) entre les services sources et l'application macOS. Ce relay
-ne déchiffre pas, ne stocke pas et n'exploite pas le contenu des messages. Seules des
-métadonnées techniques transitoires (identifiants de session, horodatages) sont
-conservées le temps strictement nécessaire au routage.
+WebhookForge utilise un serveur relay interne pour acheminer les messages chiffrés
+(WSS/TLS) entre les services sources et l'application macOS. Ce relay ne déchiffre
+pas, ne stocke pas et n'exploite pas le contenu des messages. Seules des métadonnées
+techniques transitoires (identifiants de session, horodatages) sont conservées le
+temps strictement nécessaire au routage.
 
 ---
 
