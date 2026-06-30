@@ -2,8 +2,6 @@
 
 **Orchestrez des workflows IA locaux depuis votre Mac — et depuis votre iPhone.**
 
-WebhookForge est une application macOS native (SwiftUI + AppKit) qui pilote automatiquement Claude Code à votre place : elle reçoit un déclencheur, lance une session IA complète dans votre environnement local, et vous livre un résultat — site web généré, rapport produit, fichiers classés, scripts exécutés.
-
 ---
 
 ## Téléchargement
