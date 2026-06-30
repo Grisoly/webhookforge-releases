@@ -1,12 +1,17 @@
 {
-  "version": "1.4.0",
-  "build": "198",
-  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.4.0/WebhookForge.zip",
-  "sha256": "79e2f1dfc96106be1e5118b9547fda11460813997abd0fe9b38206d9f60f54c9",
-  "releaseNotes": "### Nouveautés\n- iPhone companion : envoi de plusieurs photos/documents en une seule session Claude (regroupement par groupId)\n- iPhone companion : notifications push avec la vraie réponse de Claude (plus de texte générique)\n- iPhone companion : désappairage automatique côté iOS quand le Mac supprime l'appareil\n- iPhone companion : nom de l'appareil affiché correctement (simulateur + iPhone physique)\n\n### Corrections\n- Sessions dupliquées : 2 photos envoyées déclenchaient 2 sessions Claude → maintenant 1 seule session avec les 2 fichiers\n- Notification iOS générique → remplacée par le dernier message texte réel de Claude (capturé en streaming)",
+  "version": "1.4.1",
+  "build": "200",
+  "url": "https://github.com/WEB-DESIGN-PROD/webhookforge-releases/releases/download/v1.4.1/WebhookForge.zip",
+  "sha256": "63649ecb2ef8ed36c62035d40963b8d294f66861eb5da7d011d7fbe75a0ca0be",
+  "releaseNotes": "### Nouveautés\n- iPhone : choix de la destination lors de l'envoi — webhook ou dossier surveillé\n- iPhone : envoi direct dans un dossier surveillé (le fichier est copié → FSEvents déclenche la surveillance automatiquement)\n- macOS : toggle \"Visible sur l'app iPhone\" par webhook et par surveillance (ON par défaut)\n- iOS : liste des dossiers surveillés visibles reçue depuis le Mac via relay",
   "minimumSystemVersion": "14.0",
-  "publishedAt": "2026-06-30T09:48:33Z",
+  "publishedAt": "2026-06-30T12:42:22Z",
   "history": [
+    {
+      "version": "1.4.0",
+      "releaseNotes": "### Nouveautés\n- iPhone companion : envoi de plusieurs photos/documents en une seule session Claude (regroupement par groupId)\n- iPhone companion : notifications push avec la vraie réponse de Claude (plus de texte générique)\n- iPhone companion : désappairage automatique côté iOS quand le Mac supprime l'appareil\n- iPhone companion : nom de l'appareil affiché correctement (simulateur + iPhone physique)\n\n### Corrections\n- Sessions dupliquées : 2 photos envoyées déclenchaient 2 sessions Claude → maintenant 1 seule session avec les 2 fichiers\n- Notification iOS générique → remplacée par le dernier message texte réel de Claude (capturé en streaming)",
+      "publishedAt": "2026-06-30T09:48:33Z"
+    },
     {
       "version": "1.3.5",
       "releaseNotes": "### Corrections\n- Quick Actions Finder : `reregisterMainApp()` désinscrît maintenant tous les emplacements connus de WebhookForge.app (`~/Applications/`, `/Applications/`, bundle courant) avant le re-enregistrement — évite l'accumulation d'entrées NSServices résiduelles lors des rebuilds",
@@ -101,11 +106,6 @@
       "version": "1.1.5",
       "releaseNotes": "### Corrections\n- Bouton GitHub : curseur pointer actif sur tout le bouton (icône + texte animé)\n- Footer : \"WebhookForge — v1.1.5\" centré via ZStack (indépendant des largeurs gauche/droite)\n- Releases GitHub : les descriptions incluent désormais le détail des nouveautés et corrections (extrait du CHANGELOG)",
       "publishedAt": "2026-06-28T08:46:57Z"
-    },
-    {
-      "version": "1.1.4",
-      "releaseNotes": "### Corrections\n- CI : runner mis à jour vers macOS 26 — les releases ont maintenant le bon look Tahoe (arrondis, chrome fenêtre)\n- Logo GitHub : rendu vectoriel net depuis l'asset catalog (plus de rasterisation SVG flou)",
-      "publishedAt": "2026-06-28T08:33:34Z"
     }
   ]
 }
